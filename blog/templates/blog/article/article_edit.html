@@ -1,0 +1,17 @@
+{% extends "blog/base.html" %}
+{% load i18n %}
+{% block content %}
+  <h1>{% trans "Edit your article" %}</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    
+    <h2>{% trans "Select Tags" %}</h2>
+    {{ tag_form.as_p }}
+    
+    <button type="submit">{% trans "Submit" %}</button>
+  </form>
+  <p>
+    <a href="{% url 'blog:article_delete' article.pk %}">{% trans "Delete this article" %}</a>
+  </p>
+{% endblock %}

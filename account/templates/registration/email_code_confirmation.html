@@ -1,0 +1,29 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>Enter Confirmation Code</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <div class="error">{{ form.confirmation_code.errors }}</div>
+        <label for="id_confirmation_code">{{ form.confirmation_code.label }}</label>
+        {{ form.confirmation_code }}
+        <input type="submit" value="Confirm">
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeButtons = document.querySelectorAll('ul.messages li a.close');
+    
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const message = this.parentElement;
+                    message.style.opacity = '0';
+                    message.style.maxHeight = '0';
+                    setTimeout(() => message.remove(), 300); // Время должно совпадать с transition в CSS
+                });
+            });
+        });
+      </script>
+    {% endblock %}
+

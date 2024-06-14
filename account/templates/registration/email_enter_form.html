@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "New Email" %}
+{% endblock title %}
+
+{% block content %}
+    <h1>{% trans "New Email" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans "Submit" %}</button>
+    </form>
+{% endblock content %}

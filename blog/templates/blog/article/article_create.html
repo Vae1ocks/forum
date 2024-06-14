@@ -1,0 +1,38 @@
+{% extends "blog/base.html" %}
+{% block title %}Create Article{% endblock %}
+
+{% block content %}
+  <h1>Create Article</h1>
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li class="{{ message.tags }}">
+          {{ message }}
+          <a href="#" class="close">&times;</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <label for="id_tags">Tags:</label><br>
+    {{ tag_form.tags }}
+    <button type="submit">Create</button>
+  </form>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const closeButtons = document.querySelectorAll('ul.messages li a.close');
+
+        closeButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const message = this.parentElement;
+                message.style.opacity = '0';
+                message.style.maxHeight = '0';
+                setTimeout(() => message.remove(), 300); // Время должно совпадать с transition в CSS
+            });
+        });
+    });
+  </script>
+{% endblock %}

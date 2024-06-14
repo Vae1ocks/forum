@@ -1,0 +1,82 @@
+{% extends "blog/base.html" %}
+
+{% load blog_tags %}
+{% load i18n %}  
+
+{% block title %}
+    {% trans "Articles List" %}  
+{% endblock title %}
+
+{% block content %}
+    <h1>{% trans "Articles" %}</h1> 
+
+    <div class="search-filter">
+        <a href="{% url 'blog:article_search' %}" class="btn btn-primary">{% trans "Search Articles" %}</a>
+    </div>
+
+    <div class="tag-filter">
+        <form method="get" action="{% url 'blog:article_list' %}">
+            <label for="tag-select">{% trans "Filter by Tag:" %}</label>
+            <select id="tag-select" name="tag">
+                {% for tag in all_tags %}
+                    <option value="{{ tag.slug }}">{{ tag.name }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit" class="btn btn-secondary">{% trans "Filter" %}</button> 
+        </form>
+    </div>
+    
+
+    {% for article in articles %}
+        <div class="article">
+            <h2><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h2>
+            <p><strong>{% trans "Published by:" %}</strong> <a href="{% url 'account:user_detail' article.author.pk %}">{{ article.author }}</a></p>  <!-- Переводим текст -->
+            <p><strong>{% trans "Tags:" %}</strong>
+                {% for tag in article.tags.all %}
+                    <a href="{% url 'blog:article_tagged_list' tag.slug %}">{{ tag.name }}</a>{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </p>
+            <p><strong>{% trans "Body:" %}</strong> {{ article.body|markdown|truncatewords_html:30 }}...</p>
+        </div>
+        <hr>
+    {% endfor %}
+
+
+    <div class="pagination">
+        {% if is_paginated %}
+            <span class="step-links">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1">{% trans "first" %}</a>
+                    <a href="?page={{ page_obj.previous_page_number }}">{% trans "previous" %}</a>
+                {% endif %}
+
+                <span class="current">
+                    {% trans "Page" %} {{ page_obj.number }} {% trans "of" %} {{ page_obj.paginator.num_pages }}.
+                </span>
+
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">{% trans "next" %}</a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}">{% trans "last" %}</a>
+                {% endif %}
+            </span>
+        {% endif %}
+    </div>
+
+    <p>{% blocktrans %} Total Articles: {{ all_articles }} {% endblocktrans %}</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeButtons = document.querySelectorAll('ul.messages li a.close');
+
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const message = this.parentElement;
+                    message.style.opacity = '0';
+                    message.style.maxHeight = '0';
+                    setTimeout(() => message.remove(), 300); // Время должно совпадать с transition в CSS
+                });
+            });
+        });
+    </script>
+    {% endblock %}

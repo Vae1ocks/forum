@@ -1,0 +1,32 @@
+{% extends "blog/base.html" %}
+{% load blog_tags i18n %}
+
+{% block title %}{% trans "Search" %}{% endblock %}
+
+{% block content %}
+  {% if query %}
+    <h1>{% blocktrans %}Articles containing "{{ query }}"{% endblocktrans %}</h1>
+    <h3>
+        {% blocktrans with results.count as total_results %}
+          Found {{ total_results }} result{{ total_results|pluralize }}
+        {% endblocktrans %}
+    </h3>
+    {% for article in results %}
+      <h4>
+        <a href="{{ article.get_absolute_url }}">
+          {{ article.title }}
+        </a>
+      </h4>
+      {{ article.body|markdown|truncatewords_html:12 }}
+    {% empty %}
+      <p>{% trans "There are no results for your query." %}</p>
+    {% endfor %}
+    <p><a href="{% url "blog:article_search" %}">{% trans "Search again" %}</a></p>
+  {% else %}
+    <h1>{% trans "Search for articles" %}</h1>
+    <form method="get">
+      {{ form.as_p }}
+      <input type="submit" value="{% trans "Search" %}">
+    </form>
+  {% endif %}
+{% endblock %}

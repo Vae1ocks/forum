@@ -1,0 +1,715 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-10 01:32+0300\n"
+"PO-Revision-Date: 2024-06-10 01:32+0300\n"
+"Last-Translator: admin admin <admin@admin.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\account\forms.py:7 .\account\forms.py:39
+msgid "Write your password"
+msgstr "Введите пароль"
+
+#: .\account\forms.py:8
+msgid "Repeat your password"
+msgstr "Повторите пароль"
+
+#: .\account\forms.py:18
+msgid "Password mismatch"
+msgstr "Пароли не совпадают"
+
+#: .\account\forms.py:22
+msgid "Write the confirmation code sent to your email"
+msgstr "Введите код подтверждения, отправленный на вашу почту"
+
+#: .\account\forms.py:42
+msgid "Enter your login secret code"
+msgstr "Введите ваш секретный код для входа"
+
+#: .\account\models.py:9
+msgid "email address"
+msgstr "почтовый адрес"
+
+#: .\account\templates\account\detail.html:4
+#: .\account\templates\account\detail.html:8
+msgid "User Profile:"
+msgstr "Профиль:"
+
+#: .\account\templates\account\detail.html:15
+msgid "About me:"
+msgstr "О себе:"
+
+#: .\account\templates\account\detail.html:17
+#: .\account\templates\account\detail.html:19
+msgid "Full Name:"
+msgstr "Полное имя:"
+
+#: .\account\templates\account\detail.html:19
+msgid "NULL"
+msgstr "Не указано"
+
+#: .\account\templates\account\detail.html:21
+msgid "Email:"
+msgstr "Электронная почта:"
+
+#: .\account\templates\account\detail.html:22
+msgid "Created:"
+msgstr "Создан:"
+
+#: .\account\templates\account\detail.html:25
+msgid "Wanna change your password?"
+msgstr "Хотите изменить пароль?"
+
+#: .\account\templates\account\detail.html:25
+msgid "Click here"
+msgstr "Кликните здесь"
+
+#: .\account\templates\account\detail.html:26
+msgid "You can edit your profile here"
+msgstr "Здесь вы можете отредактировать ваш профиль"
+
+#: .\account\templates\account\detail.html:27
+msgid "You can edit your email here"
+msgstr "Здесь вы можете отредактировать вашу почту"
+
+#: .\account\templates\account\detail.html:28
+msgid "You can get secret code for login instead of password and username"
+msgstr ""
+"Вы можете получить секретный код для входа вместо пароля и имени "
+"пользователя"
+
+#: .\account\templates\account\detail.html:31
+msgid "Articles by"
+msgstr "Темы"
+
+#: .\account\templates\account\detail.html:38
+msgid "Edit"
+msgstr "Редактировать"
+
+#: .\account\templates\account\detail.html:43
+msgid "No articles found."
+msgstr "Ни одной темы не найдено"
+
+#: .\account\templates\account\detail.html:47
+msgid "Comments by"
+msgstr "Комментарии"
+
+#: .\account\templates\account\detail.html:53
+msgid "For article:"
+msgstr "Для темы"
+
+#: .\account\templates\account\detail.html:58
+msgid "No comments found."
+msgstr "Комментариев нет"
+
+#: .\account\templates\account\edit.html:4
+#: .\account\templates\account\edit.html:7
+msgid "Edit Your Profile"
+msgstr "Отредактируйте свой профиль"
+
+#: .\account\templates\account\edit.html:11
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: .\account\templates\account\password_confirmation.html:4
+#: .\account\templates\account\password_confirmation.html:8
+msgid "Password Confirmation"
+msgstr "Подтвердите пароль"
+
+#: .\account\templates\account\password_confirmation.html:13
+msgid "Password"
+msgstr "Пароль"
+
+#: .\account\templates\account\password_confirmation.html:16
+#: .\account\templates\registration\email_enter_form.html:13
+#: .\blog\templates\blog\article\article_edit.html:12
+msgid "Submit"
+msgstr "Отправить"
+
+#: .\account\templates\account\token_info.html:4
+#: .\account\templates\account\token_info.html:8
+msgid "Token Information"
+msgstr "Информация о токене"
+
+#: .\account\templates\account\token_info.html:9
+msgid "Your authentication token is:"
+msgstr "Ваш авторизационный токен:"
+
+#: .\account\templates\account\token_info.html:11
+msgid "Please keep this token secure."
+msgstr "Никому не показывайте его, храните в надёждом месте."
+
+#: .\account\templates\registration\email_enter_form.html:5
+#: .\account\templates\registration\email_enter_form.html:9
+msgid "New Email"
+msgstr "Новая электронная почта:"
+
+#: .\account\templates\registration\logged_out.html:6
+msgid "You have been logged out"
+msgstr "Вы вышли из аккаунта"
+
+#: .\account\templates\registration\logged_out.html:7
+#: .\account\templates\registration\logged_out.html:8
+#: .\account\templates\registration\login.html:13
+msgid "You can"
+msgstr "Вы можете"
+
+#: .\account\templates\registration\logged_out.html:7
+#: .\account\templates\registration\registration_done.html:6
+msgid "login"
+msgstr "войти в аккаунт"
+
+#: .\account\templates\registration\logged_out.html:8
+msgid "visit the site without authorization."
+msgstr "Зайти без авторизации"
+
+#: .\account\templates\registration\login.html:5
+#: .\account\templates\registration\login.html:9
+#: .\account\templates\registration\password_reset_complete.html:8
+#: .\account\templates\registration\token_login.html:12
+msgid "Login"
+msgstr "Войти"
+
+#: .\account\templates\registration\login.html:12
+#: .\account\templates\registration\password_reset_form.html:5
+msgid "Forgotten your password?"
+msgstr "Забыли пароль?"
+
+#: .\account\templates\registration\login.html:13
+msgid "Haven't account?"
+msgstr "Нет аккаунта?"
+
+#: .\account\templates\registration\login.html:13
+msgid "register here"
+msgstr "можете зарегестрироваться, кликнув по ссылке"
+
+#: .\account\templates\registration\login.html:16
+msgid "Sign in with Google"
+msgstr "Авторизуйтесь через Гугл"
+
+#: .\account\templates\registration\login.html:21
+msgid "Login with secret code"
+msgstr "Войти по секретному коду"
+
+#: .\account\templates\registration\password_change_done.html:5
+msgid "Password Changed Successfully"
+msgstr "Пароль был успешно изменён"
+
+#: .\account\templates\registration\password_change_done.html:6
+msgid "Your password has been changed successfully."
+msgstr "Ваш пароль был успешно изменён"
+
+#: .\account\templates\registration\password_change_done.html:7
+msgid "Log in"
+msgstr "Войти"
+
+#: .\account\templates\registration\password_change_done.html:7
+msgid "again."
+msgstr "снова"
+
+#: .\account\templates\registration\password_change_form.html:4
+#: .\account\templates\registration\password_change_form.html:6
+msgid "Change your password"
+msgstr "Введите пароль"
+
+#: .\account\templates\registration\password_change_form.html:7
+msgid "Use the form below to change your password."
+msgstr "Для смены пароля введите данные в форму"
+
+#: .\account\templates\registration\password_change_form.html:13
+msgid "Old Password:"
+msgstr "Старый пароль:"
+
+#: .\account\templates\registration\password_change_form.html:20
+msgid "New Password:"
+msgstr "Новый пароль:"
+
+#: .\account\templates\registration\password_change_form.html:27
+msgid "New Password Confirmation:"
+msgstr "Пароли не совпадают"
+
+#: .\account\templates\registration\password_change_form.html:30
+msgid "Change"
+msgstr "Изменить"
+
+#: .\account\templates\registration\password_reset_complete.html:6
+msgid "Password Reset Complete"
+msgstr "Пароль успешно сброшен"
+
+#: .\account\templates\registration\password_reset_complete.html:7
+msgid "Your password has been successfully reset."
+msgstr "Ваш пароль был успешно изменён"
+
+#: .\account\templates\registration\password_reset_complete.html:8
+msgid "You can now"
+msgstr "Вы можете"
+
+#: .\account\templates\registration\password_reset_confirm.html:4
+#: .\account\templates\registration\password_reset_confirm.html:6
+#: .\account\templates\registration\password_reset_done.html:4
+#: .\account\templates\registration\password_reset_done.html:6
+#: .\account\templates\registration\password_reset_form.html:3
+msgid "Reset your password"
+msgstr "Сбросить пароль"
+
+#: .\account\templates\registration\password_reset_confirm.html:8
+msgid "Please enter your new password twice:"
+msgstr "Введите новый пароль дважды"
+
+#: .\account\templates\registration\password_reset_confirm.html:12
+msgid "Change my password"
+msgstr "Изменить пароль"
+
+#: .\account\templates\registration\password_reset_confirm.html:15
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+"Ссылка сброса пароля неверна, вероятно она уже была использована. Запросите "
+"новую ссылку для сброса пароля."
+
+#: .\account\templates\registration\password_reset_done.html:7
+msgid "We've emailed you instructions for setting your password."
+msgstr "Мы отправили вам инструкцию для изменения пароля."
+
+#: .\account\templates\registration\password_reset_done.html:8
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with."
+msgstr ""
+"Если вы не получили электронное письмо, убедитесь, что вы правильно ввели "
+"нужный электронный адрес."
+
+#: .\account\templates\registration\password_reset_email.html:2
+#, python-format
+msgid ""
+"\n"
+"Someone asked for a password reset for the email %(email)s. \n"
+"Your username, in case you've forgotten: %(user.get_username)s\n"
+"Follow the link below:\n"
+msgstr ""
+"\n"
+"Кто-то запросил ссылку на сброс пароля на электронную почту. %(email)s. \n"
+"Ваше имя пользователя, на случай, если вы его забыли: %(user.get_username)s\n"
+"Перейдите по ссылке ниже:\n"
+
+#: .\account\templates\registration\password_reset_form.html:6
+msgid "Enter your e-mail address to obtain a new password."
+msgstr "Введите вашу электронную почту для получения ссылки на сброс пароля."
+
+#: .\account\templates\registration\password_reset_form.html:9
+msgid "Send e-mail"
+msgstr "Отправить письмо"
+
+#: .\account\templates\registration\registration.html:3
+#: .\account\templates\registration\registration.html:6
+msgid "Registration"
+msgstr "Регистрация"
+
+#: .\account\templates\registration\registration.html:66
+msgid "Register"
+msgstr "Зарегестрироваться"
+
+#: .\account\templates\registration\registration_done.html:5
+msgid "Your account has been created"
+msgstr "Ваш аккаунт был создан"
+
+#: .\account\templates\registration\registration_done.html:6
+msgid "Type to"
+msgstr "Кликните"
+
+#: .\account\templates\registration\token_login.html:4
+#: .\account\templates\registration\token_login.html:8
+msgid "Token Login"
+msgstr "Войти по авторизационному токену"
+
+#: .\account\views.py:84
+msgid "Finish the registration"
+msgstr "Завершить регистрацию"
+
+#: .\account\views.py:85
+#, python-brace-format
+msgid ""
+"Your confirmation code to complete the registration: {confirmation_code}"
+msgstr "Код подтвержления для завершения регистрации: {confirmation_code}"
+
+#: .\account\views.py:116 .\account\views.py:146 .\account\views.py:193
+msgid "Confirmation code is not valid"
+msgstr "Код подтверждения неверный"
+
+#: .\account\views.py:129
+msgid "Edit your email"
+msgstr "Отредактируйте вашу почту"
+
+#: .\account\views.py:130
+#, python-brace-format
+msgid "The confirmation code to change your email: {confirmation_code}"
+msgstr "Код подтвержления для смены почты: {confirmation_code}"
+
+#: .\account\views.py:168
+msgid "New email confirmation"
+msgstr "Подтверждение новой почты"
+
+#: .\account\views.py:169
+#, python-brace-format
+msgid "Here is your code to confirm your new email: {confirmation_code}"
+msgstr "Ваш код для подтверждения вашей новой почты: {confirmation_code}"
+
+#: .\account\views.py:215
+msgid "New authentication token has been created"
+msgstr "Новый авторизационный код был создан"
+
+#: .\account\views.py:220
+msgid "Password incorrect"
+msgstr "Неверный пароль"
+
+#: .\blog\models.py:17
+msgid "Draft"
+msgstr "Редактирование (не будет опубликован)"
+
+#: .\blog\models.py:18 .\blog\templates\blog\article\article_detail.html:11
+msgid "Published"
+msgstr "К публикации"
+
+#: .\blog\templates\blog\article\article_delete.html:4
+#: .\blog\templates\blog\article\comment_delete.html:4
+msgid "Delete Article"
+msgstr "Удалить аккаунт"
+
+#: .\blog\templates\blog\article\article_delete.html:5
+#, python-format
+msgid "Are you sure you want to delete the article \"%(object.title)s\"?"
+msgstr "Вы уверены, что хотите удалить тему \"%(object.title)s\"?"
+
+#: .\blog\templates\blog\article\article_delete.html:8
+#: .\blog\templates\blog\article\comment_delete.html:8
+msgid "Yes, delete"
+msgstr "Да, удалить"
+
+#: .\blog\templates\blog\article\article_delete.html:9
+#: .\blog\templates\blog\article\comment_delete.html:9
+msgid "No, cancel"
+msgstr "Нет, отмена"
+
+#: .\blog\templates\blog\article\article_detail.html:11
+msgid "by"
+msgstr " "
+
+#: .\blog\templates\blog\article\article_detail.html:12
+msgid "Views"
+msgstr "Просмторы"
+
+#: .\blog\templates\blog\article\article_detail.html:16
+msgid "Tags"
+msgstr "Теги"
+
+#: .\blog\templates\blog\article\article_detail.html:23
+msgid "Similar articles"
+msgstr "Похожие темы"
+
+#: .\blog\templates\blog\article\article_detail.html:29
+msgid "There are no similar articles."
+msgstr "Нет схожих тем"
+
+#: .\blog\templates\blog\article\article_detail.html:33
+#, python-format
+msgid ""
+"\n"
+"      %(total_comments)s comment%(total_comments|pluralize)s\n"
+"    "
+msgstr ""
+"\n"
+"        %(total_comments)s комментарии%(total_comments|pluralize)s\n"
+"      "
+
+#: .\blog\templates\blog\article\article_detail.html:41
+#, python-format
+#| msgid "Comment %(forloop.counter)s by %(comment.author.username)s"
+msgid "Comment by %(comment.author.username)s"
+msgstr "Комментарий, опубликованный %(comment.author.username)s"
+
+#: .\blog\templates\blog\article\article_detail.html:44
+msgid "You can delete this comment"
+msgstr "Вы можете удалить данный комментарий"
+
+#: .\blog\templates\blog\article\article_detail.html:50
+msgid "There are no comments yet."
+msgstr "Пока нет комментариев."
+
+#: .\blog\templates\blog\article\article_edit.html:4
+msgid "Edit your article"
+msgstr "Отредактируйте тему"
+
+#: .\blog\templates\blog\article\article_edit.html:9
+msgid "Select Tags"
+msgstr "Выберите теги"
+
+#: .\blog\templates\blog\article\article_edit.html:15
+msgid "Delete this article"
+msgstr "Удалить тему"
+
+#: .\blog\templates\blog\article\comment.html:3
+msgid "Add a comment"
+msgstr "Добавить комментарий"
+
+#: .\blog\templates\blog\article\comment.html:7
+msgid "Your comment has been added."
+msgstr "Ваш комментарий был добавлен"
+
+#: .\blog\templates\blog\article\comment.html:8
+msgid "Back to the article"
+msgstr "Вернуться к теме"
+
+#: .\blog\templates\blog\article\comment_delete.html:5
+#, python-format
+msgid "Are you sure you want to delete the comment \"%(object.body)s\"?"
+msgstr "Вы уверены, что хотите удалить комментарий \"%(object.title)s\"?"
+
+#: .\blog\templates\blog\article\comment_form.html:2
+msgid "Add a new comment"
+msgstr "Добавить новый комментарий"
+
+#: .\blog\templates\blog\article\comment_form.html:6
+msgid "Add comment"
+msgstr "Добавить комментарий"
+
+#: .\blog\templates\blog\article\list.html:7
+msgid "Articles List"
+msgstr "Темы"
+
+#: .\blog\templates\blog\article\list.html:11
+msgid "Articles"
+msgstr "Темы"
+
+#: .\blog\templates\blog\article\list.html:14
+msgid "Search Articles"
+msgstr "Искать темы"
+
+#: .\blog\templates\blog\article\list.html:19
+msgid "Filter by Tag:"
+msgstr "Найти по тегу"
+
+#: .\blog\templates\blog\article\list.html:25
+msgid "Filter"
+msgstr "Найти"
+
+#: .\blog\templates\blog\article\list.html:33
+msgid "Published by:"
+msgstr "Опубликован:"
+
+#: .\blog\templates\blog\article\list.html:34
+msgid "Tags:"
+msgstr "Теги:"
+
+#: .\blog\templates\blog\article\list.html:39
+msgid "Body:"
+msgstr "Содержание:"
+
+#: .\blog\templates\blog\article\list.html:49
+msgid "first"
+msgstr "Первая"
+
+#: .\blog\templates\blog\article\list.html:50
+msgid "previous"
+msgstr "Предыдущая"
+
+#: .\blog\templates\blog\article\list.html:54
+msgid "Page"
+msgstr "Страница"
+
+#: .\blog\templates\blog\article\list.html:54
+msgid "of"
+msgstr "из"
+
+#: .\blog\templates\blog\article\list.html:58
+msgid "next"
+msgstr "следующая"
+
+#: .\blog\templates\blog\article\list.html:59
+msgid "last"
+msgstr "предыдущая"
+
+#: .\blog\templates\blog\article\list.html:65
+#, python-format
+msgid " Total Articles: %(all_articles)s "
+msgstr "Всего тем: %(all_articles)s"
+
+#: .\blog\templates\blog\article\search.html:4
+#: .\blog\templates\blog\article\search.html:29
+msgid "Search"
+msgstr "Искать"
+
+#: .\blog\templates\blog\article\search.html:8
+#, python-format
+msgid "Articles containing \"%(query)s\""
+msgstr "Темы, содержащие \"%(query)s\""
+
+#: .\blog\templates\blog\article\search.html:10
+#, python-format
+msgid ""
+"\n"
+"          Found %(total_results)s result%(total_results|pluralize)s\n"
+"        "
+msgstr ""
+"\n"
+"          Найдено %(total_results)s результатов %(total_results|pluralize)s\n"
+"        "
+
+#: .\blog\templates\blog\article\search.html:22
+msgid "There are no results for your query."
+msgstr "Для вашего запроса результаты не найдены."
+
+#: .\blog\templates\blog\article\search.html:24
+msgid "Search again"
+msgstr "Искать снова"
+
+#: .\blog\templates\blog\article\search.html:26
+msgid "Search for articles"
+msgstr "Искать для тем"
+
+#: .\blog\templates\blog\base.html:17
+msgid "Forum"
+msgstr "Форум"
+
+#: .\blog\templates\blog\base.html:20
+msgid "Hello"
+msgstr "Привет"
+
+#: .\blog\templates\blog\base.html:20
+msgid "Logout"
+msgstr "Выйти"
+
+#: .\blog\templates\blog\base.html:22
+msgid "Create Article"
+msgstr "Создать тему"
+
+#: .\blog\templates\blog\base.html:24
+msgid "Log-in"
+msgstr "Войти"
+
+#: .\blog\templates\blog\base.html:27
+msgid "Communicate and create."
+msgstr "Общайтесь и создавайте"
+
+#: .\blog\templates\blog\base.html:34
+msgid "Language"
+msgstr "Язык"
+
+#: .\blog\views.py:152
+msgid ""
+"Your article has been successfully created."
+"                                                 It will be shown in the "
+"list of articles within 15 minutes "
+msgstr ""
+"Ваша статья была успешно опубликована. Она будет отображена в списке статей "
+"в течении 15 минут."
+
+#: .\blog\views.py:155
+msgid ""
+"Your article has been created with draft status."
+"                                                 Only you can see this"
+msgstr ""
+"Ваша статья была успешно опубликована с статусом редактирования. Только вы "
+"можете увидеть её."
+
+#: .\blog\views.py:162 .\blog\views.py:205
+msgid "You must choose at least 1 tag"
+msgstr "Вы должны выбрать минимум 1 тег"
+
+#: .\blog\views.py:195
+msgid ""
+"Your article has been updated.                                You will see "
+"changes within 15 minutes."
+msgstr ""
+"Ваша статья была успешно обновлена. Вы увидите изменения через 15 минут."
+
+#: .\forum\settings.py:120
+msgid "English"
+msgstr "Английский"
+
+#: .\forum\settings.py:121
+msgid "Russian"
+msgstr "Русский"
+
+#~ msgid "Create New Article"
+#~ msgstr "Создать тему"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "    <strong> Published </strong> %(article.publish)s <strong> by </strong> <a href=\"%(user_detail_url)s\">%(article.author)s</a><br>\n"
+#~ "    <strong> Views </strong> %(all_views)s\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "    Опубликован %(article.publish)s <a href=\"%(user_detail_url)s\">%(article.author)s</a>\n"
+#~ "    "
+
+#~ msgid "avatar"
+#~ msgstr "Аватар"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "                        Page %(current_page)s of %(total_pages)s.\n"
+#~ "                    "
+#~ msgstr ""
+#~ "\n"
+#~ "Страница %(current_page)s из %(total_pages)s."
+
+#, python-format
+#~ msgid "Page %(page_obj.number)s of %(page_obj.paginator.num_pages)s."
+#~ msgstr "Страница %(page_obj.number)s из %(page_obj.paginator.num_pages)s."
+
+#~ msgid "Total Articles:"
+#~ msgstr "Темы:"
+
+#, python-format
+#~ msgid "Posts tagged with \"%(tag)s\""
+#~ msgstr "Посты с тегом \"%(tag)s\""
+
+#, python-format
+#~ msgid "Published %(article.publish)s by %(article.author)s"
+#~ msgstr "Опубликован %(article.publish)s %(article.author)s"
+
+#~ msgid "Next"
+#~ msgstr "Следующая"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "      There is one article.\n"
+#~ "      "
+#~ msgid_plural ""
+#~ "\n"
+#~ "      There are %(all_articles)s articles.\n"
+#~ "      "
+#~ msgstr[0] ""
+#~ "\n"
+#~ "      Нет тем.\n"
+#~ "      "
+#~ msgstr[1] ""
+#~ "\n"
+#~ "      Всего %(all_articles)s тема.\n"
+#~ "      "
+#~ msgstr[2] ""
+#~ "\n"
+#~ "      Всего %(all_articles)s тем.\n"
+#~ "      "
+#~ msgstr[3] ""
+#~ "\n"
+#~ "      Всего %(all_articles)s темы.\n"
+#~ "      "

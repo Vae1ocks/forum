@@ -1,0 +1,75 @@
+{% extends "blog/base.html" %}
+{% load blog_tags %}
+{% load i18n %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+  <h1>{{ article.title }}</h1>
+  <p class="date">
+    {% url 'account:user_detail' pk=article.author.pk as user_detail_url %}
+    <strong>{% trans "Published" %}</strong> {{ article.publish }} <strong>{% trans "by" %}</strong> <a href="{{ user_detail_url }}">{{ article.author }}</a><br>
+    <strong>{% trans "Views" %}</strong> {{ all_views }}
+  </p>
+  {{ article.body|markdown }}
+
+  <h2>{% trans "Tags" %}</h2>
+  <p>
+    {% for tag in article.tags.all %}
+      <a href="{% url 'blog:article_tagged_list' tag.slug %}">{{ tag.name }}</a>{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+  </p>
+
+  <h2>{% trans "Similar articles" %}</h2>
+  {% for similar_article in articles_with_same_tags %}
+      <p>
+          <a href="{{ similar_article.get_absolute_url }}">{{ similar_article.title }}</a>
+      </p>
+  {% empty %}
+      <p>{% trans "There are no similar articles." %}</p>
+  {% endfor %}
+
+  <h2>
+    {% blocktrans with article.comments.count as total_comments %}
+      {{ total_comments }} comment{{ total_comments|pluralize }}
+    {% endblocktrans %}
+  </h2>
+
+  {% for comment in comments %}
+  <div class="comment">
+    <p class="info">
+      {% blocktrans %}Comment by {{ comment.author.username }}{% endblocktrans %}
+      {{ comment.created }}
+      {% if request.user == comment.author %}
+        <a href="{% url 'blog:comment_delete' comment.id %}">{% trans "You can delete this comment" %}</a>
+      {% endif %}
+    </p>
+    {{ comment.body|linebreaks }}
+  </div>
+{% empty %}
+  <p>{% trans "There are no comments yet." %}</p>
+{% endfor %}
+  
+  {% if request.user.is_authenticated %}
+    {% include "blog/article/comment_form.html" %}
+  {% endif %}
+  
+  <div style="margin-bottom: 50px;"></div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const closeButtons = document.querySelectorAll('ul.messages li a.close');
+
+        closeButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const message = this.parentElement;
+                message.style.opacity = '0';
+                message.style.maxHeight = '0';
+                setTimeout(() => message.remove(), 300); // Время должно совпадать с transition в CSS
+            });
+        });
+    });
+  </script>
+{% endblock %}
+

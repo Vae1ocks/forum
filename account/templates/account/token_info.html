@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Token Information" %}{% endblock %}
+
+{% block content %}
+  <div class="token-info">
+    <h1>{% trans "Token Information" %}</h1>
+    <p>{% trans "Your authentication token is:" %}</p>
+    <pre>{{ authentication_token }}</pre>
+    <p>{% trans "Please keep this token secure." %}</p>
+  </div>
+{% endblock %}

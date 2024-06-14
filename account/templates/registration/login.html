@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+{% load i18n %}
+
+{% block content %}
+  <h2>{% trans "Login" %}</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">{% trans "Login" %}</button>
+  </form>
+  <br>
+  <p><a href="{% url 'account:password_reset' %}">{% trans "Forgotten your password?" %}</a></p>
+  <p>{% trans "Haven't account?" %} {% trans "You can" %} <a href="{% url 'account:registration' %}">{% trans "register here" %}</a></p>
+  <li class="google">
+    <a href="{% url "social:begin" "google-oauth2" %}">
+        {% trans "Sign in with Google" %}
+    </a>
+  </li>
+  <li class="secret-code">
+    <a href="{% url 'account:authentication_token_login' %}">
+        {% trans "Login with secret code" %}
+    </a>
+  </li>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Add a comment" %}{% endblock %}
+
+{% block content %}
+  {% if comment %}
+    <h2>{% trans "Your comment has been added." %}</h2>
+    <p><a href="{{ article.get_absolute_url }}">{% trans "Back to the article" %}</a></p>
+  {% else %}
+    {% include "blog/article/includes/comment_form.html" %}
+  {% endif %}
+{% endblock %}

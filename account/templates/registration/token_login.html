@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Token Login" %}{% endblock %}
+
+{% block content %}
+  <div class="token-login">
+    <h1>{% trans "Token Login" %}</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">{% trans "Login" %}</button>
+    </form>
+  </div>
+{% endblock %}

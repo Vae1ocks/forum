@@ -1,0 +1,627 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-10 01:32+0300\n"
+"PO-Revision-Date: 2024-05-24 21:27+0300\n"
+"Last-Translator: admin admin <admin@admin.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\account\forms.py:7 .\account\forms.py:39
+msgid "Write your password"
+msgstr ""
+
+#: .\account\forms.py:8
+msgid "Repeat your password"
+msgstr ""
+
+#: .\account\forms.py:18
+msgid "Password mismatch"
+msgstr ""
+
+#: .\account\forms.py:22
+msgid "Write the confirmation code sent to your email"
+msgstr ""
+
+#: .\account\forms.py:42
+msgid "Enter your login secret code"
+msgstr ""
+
+#: .\account\models.py:9
+msgid "email address"
+msgstr ""
+
+#: .\account\templates\account\detail.html:4
+#: .\account\templates\account\detail.html:8
+msgid "User Profile:"
+msgstr ""
+
+#: .\account\templates\account\detail.html:15
+msgid "About me:"
+msgstr ""
+
+#: .\account\templates\account\detail.html:17
+#: .\account\templates\account\detail.html:19
+msgid "Full Name:"
+msgstr ""
+
+#: .\account\templates\account\detail.html:19
+msgid "NULL"
+msgstr ""
+
+#: .\account\templates\account\detail.html:21
+msgid "Email:"
+msgstr ""
+
+#: .\account\templates\account\detail.html:22
+msgid "Created:"
+msgstr ""
+
+#: .\account\templates\account\detail.html:25
+msgid "Wanna change your password?"
+msgstr ""
+
+#: .\account\templates\account\detail.html:25
+msgid "Click here"
+msgstr ""
+
+#: .\account\templates\account\detail.html:26
+msgid "You can edit your profile here"
+msgstr ""
+
+#: .\account\templates\account\detail.html:27
+msgid "You can edit your email here"
+msgstr ""
+
+#: .\account\templates\account\detail.html:28
+msgid "You can get secret code for login instead of password and username"
+msgstr ""
+
+#: .\account\templates\account\detail.html:31
+msgid "Articles by"
+msgstr ""
+
+#: .\account\templates\account\detail.html:38
+msgid "Edit"
+msgstr ""
+
+#: .\account\templates\account\detail.html:43
+msgid "No articles found."
+msgstr ""
+
+#: .\account\templates\account\detail.html:47
+msgid "Comments by"
+msgstr ""
+
+#: .\account\templates\account\detail.html:53
+msgid "For article:"
+msgstr ""
+
+#: .\account\templates\account\detail.html:58
+msgid "No comments found."
+msgstr ""
+
+#: .\account\templates\account\edit.html:4
+#: .\account\templates\account\edit.html:7
+msgid "Edit Your Profile"
+msgstr ""
+
+#: .\account\templates\account\edit.html:11
+msgid "Save Changes"
+msgstr ""
+
+#: .\account\templates\account\password_confirmation.html:4
+#: .\account\templates\account\password_confirmation.html:8
+msgid "Password Confirmation"
+msgstr ""
+
+#: .\account\templates\account\password_confirmation.html:13
+msgid "Password"
+msgstr ""
+
+#: .\account\templates\account\password_confirmation.html:16
+#: .\account\templates\registration\email_enter_form.html:13
+#: .\blog\templates\blog\article\article_edit.html:12
+msgid "Submit"
+msgstr ""
+
+#: .\account\templates\account\token_info.html:4
+#: .\account\templates\account\token_info.html:8
+msgid "Token Information"
+msgstr ""
+
+#: .\account\templates\account\token_info.html:9
+msgid "Your authentication token is:"
+msgstr ""
+
+#: .\account\templates\account\token_info.html:11
+msgid "Please keep this token secure."
+msgstr ""
+
+#: .\account\templates\registration\email_enter_form.html:5
+#: .\account\templates\registration\email_enter_form.html:9
+msgid "New Email"
+msgstr ""
+
+#: .\account\templates\registration\logged_out.html:6
+msgid "You have been logged out"
+msgstr ""
+
+#: .\account\templates\registration\logged_out.html:7
+#: .\account\templates\registration\logged_out.html:8
+#: .\account\templates\registration\login.html:13
+msgid "You can"
+msgstr ""
+
+#: .\account\templates\registration\logged_out.html:7
+#: .\account\templates\registration\registration_done.html:6
+msgid "login"
+msgstr ""
+
+#: .\account\templates\registration\logged_out.html:8
+msgid "visit the site without authorization."
+msgstr ""
+
+#: .\account\templates\registration\login.html:5
+#: .\account\templates\registration\login.html:9
+#: .\account\templates\registration\password_reset_complete.html:8
+#: .\account\templates\registration\token_login.html:12
+msgid "Login"
+msgstr ""
+
+#: .\account\templates\registration\login.html:12
+#: .\account\templates\registration\password_reset_form.html:5
+msgid "Forgotten your password?"
+msgstr ""
+
+#: .\account\templates\registration\login.html:13
+msgid "Haven't account?"
+msgstr ""
+
+#: .\account\templates\registration\login.html:13
+msgid "register here"
+msgstr ""
+
+#: .\account\templates\registration\login.html:16
+msgid "Sign in with Google"
+msgstr ""
+
+#: .\account\templates\registration\login.html:21
+msgid "Login with secret code"
+msgstr ""
+
+#: .\account\templates\registration\password_change_done.html:5
+msgid "Password Changed Successfully"
+msgstr ""
+
+#: .\account\templates\registration\password_change_done.html:6
+msgid "Your password has been changed successfully."
+msgstr ""
+
+#: .\account\templates\registration\password_change_done.html:7
+msgid "Log in"
+msgstr ""
+
+#: .\account\templates\registration\password_change_done.html:7
+msgid "again."
+msgstr ""
+
+#: .\account\templates\registration\password_change_form.html:4
+#: .\account\templates\registration\password_change_form.html:6
+msgid "Change your password"
+msgstr ""
+
+#: .\account\templates\registration\password_change_form.html:7
+msgid "Use the form below to change your password."
+msgstr ""
+
+#: .\account\templates\registration\password_change_form.html:13
+msgid "Old Password:"
+msgstr ""
+
+#: .\account\templates\registration\password_change_form.html:20
+msgid "New Password:"
+msgstr ""
+
+#: .\account\templates\registration\password_change_form.html:27
+msgid "New Password Confirmation:"
+msgstr ""
+
+#: .\account\templates\registration\password_change_form.html:30
+msgid "Change"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_complete.html:6
+msgid "Password Reset Complete"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_complete.html:7
+msgid "Your password has been successfully reset."
+msgstr ""
+
+#: .\account\templates\registration\password_reset_complete.html:8
+msgid "You can now"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_confirm.html:4
+#: .\account\templates\registration\password_reset_confirm.html:6
+#: .\account\templates\registration\password_reset_done.html:4
+#: .\account\templates\registration\password_reset_done.html:6
+#: .\account\templates\registration\password_reset_form.html:3
+msgid "Reset your password"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_confirm.html:8
+msgid "Please enter your new password twice:"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_confirm.html:12
+msgid "Change my password"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_confirm.html:15
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+
+#: .\account\templates\registration\password_reset_done.html:7
+msgid "We've emailed you instructions for setting your password."
+msgstr ""
+
+#: .\account\templates\registration\password_reset_done.html:8
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with."
+msgstr ""
+
+#: .\account\templates\registration\password_reset_email.html:2
+#, python-format
+msgid ""
+"\n"
+"Someone asked for a password reset for the email %(email)s. \n"
+"Your username, in case you've forgotten: %(user.get_username)s\n"
+"Follow the link below:\n"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_form.html:6
+msgid "Enter your e-mail address to obtain a new password."
+msgstr ""
+
+#: .\account\templates\registration\password_reset_form.html:9
+msgid "Send e-mail"
+msgstr ""
+
+#: .\account\templates\registration\registration.html:3
+#: .\account\templates\registration\registration.html:6
+msgid "Registration"
+msgstr ""
+
+#: .\account\templates\registration\registration.html:66
+msgid "Register"
+msgstr ""
+
+#: .\account\templates\registration\registration_done.html:5
+msgid "Your account has been created"
+msgstr ""
+
+#: .\account\templates\registration\registration_done.html:6
+msgid "Type to"
+msgstr ""
+
+#: .\account\templates\registration\token_login.html:4
+#: .\account\templates\registration\token_login.html:8
+msgid "Token Login"
+msgstr ""
+
+#: .\account\views.py:84
+msgid "Finish the registration"
+msgstr ""
+
+#: .\account\views.py:85
+#, python-brace-format
+msgid ""
+"Your confirmation code to complete the registration: {confirmation_code}"
+msgstr ""
+
+#: .\account\views.py:116 .\account\views.py:146 .\account\views.py:193
+msgid "Confirmation code is not valid"
+msgstr ""
+
+#: .\account\views.py:129
+msgid "Edit your email"
+msgstr ""
+
+#: .\account\views.py:130
+#, python-brace-format
+msgid "The confirmation code to change your email: {confirmation_code}"
+msgstr ""
+
+#: .\account\views.py:168
+msgid "New email confirmation"
+msgstr ""
+
+#: .\account\views.py:169
+#, python-brace-format
+msgid "Here is your code to confirm your new email: {confirmation_code}"
+msgstr ""
+
+#: .\account\views.py:215
+msgid "New authentication token has been created"
+msgstr ""
+
+#: .\account\views.py:220
+msgid "Password incorrect"
+msgstr ""
+
+#: .\blog\models.py:17
+msgid "Draft"
+msgstr ""
+
+#: .\blog\models.py:18 .\blog\templates\blog\article\article_detail.html:11
+msgid "Published"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_delete.html:4
+#: .\blog\templates\blog\article\comment_delete.html:4
+msgid "Delete Article"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_delete.html:5
+#, python-format
+msgid "Are you sure you want to delete the article \"%(object.title)s\"?"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_delete.html:8
+#: .\blog\templates\blog\article\comment_delete.html:8
+msgid "Yes, delete"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_delete.html:9
+#: .\blog\templates\blog\article\comment_delete.html:9
+msgid "No, cancel"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_detail.html:11
+msgid "by"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_detail.html:12
+msgid "Views"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_detail.html:16
+msgid "Tags"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_detail.html:23
+msgid "Similar articles"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_detail.html:29
+msgid "There are no similar articles."
+msgstr ""
+
+#: .\blog\templates\blog\article\article_detail.html:33
+#, python-format
+msgid ""
+"\n"
+"      %(total_comments)s comment%(total_comments|pluralize)s\n"
+"    "
+msgstr ""
+
+#: .\blog\templates\blog\article\article_detail.html:41
+#, python-format
+msgid "Comment by %(comment.author.username)s"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_detail.html:44
+msgid "You can delete this comment"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_detail.html:50
+msgid "There are no comments yet."
+msgstr ""
+
+#: .\blog\templates\blog\article\article_edit.html:4
+msgid "Edit your article"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_edit.html:9
+msgid "Select Tags"
+msgstr ""
+
+#: .\blog\templates\blog\article\article_edit.html:15
+msgid "Delete this article"
+msgstr ""
+
+#: .\blog\templates\blog\article\comment.html:3
+msgid "Add a comment"
+msgstr ""
+
+#: .\blog\templates\blog\article\comment.html:7
+msgid "Your comment has been added."
+msgstr ""
+
+#: .\blog\templates\blog\article\comment.html:8
+msgid "Back to the article"
+msgstr ""
+
+#: .\blog\templates\blog\article\comment_delete.html:5
+#, python-format
+msgid "Are you sure you want to delete the comment \"%(object.body)s\"?"
+msgstr ""
+
+#: .\blog\templates\blog\article\comment_form.html:2
+msgid "Add a new comment"
+msgstr ""
+
+#: .\blog\templates\blog\article\comment_form.html:6
+msgid "Add comment"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:7
+msgid "Articles List"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:11
+msgid "Articles"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:14
+msgid "Search Articles"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:19
+msgid "Filter by Tag:"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:25
+msgid "Filter"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:33
+msgid "Published by:"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:34
+msgid "Tags:"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:39
+msgid "Body:"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:49
+msgid "first"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:50
+msgid "previous"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:54
+msgid "Page"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:54
+msgid "of"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:58
+msgid "next"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:59
+msgid "last"
+msgstr ""
+
+#: .\blog\templates\blog\article\list.html:65
+#, python-format
+msgid " Total Articles: %(all_articles)s "
+msgstr ""
+
+#: .\blog\templates\blog\article\search.html:4
+#: .\blog\templates\blog\article\search.html:29
+msgid "Search"
+msgstr ""
+
+#: .\blog\templates\blog\article\search.html:8
+#, python-format
+msgid "Articles containing \"%(query)s\""
+msgstr ""
+
+#: .\blog\templates\blog\article\search.html:10
+#, python-format
+msgid ""
+"\n"
+"          Found %(total_results)s result%(total_results|pluralize)s\n"
+"        "
+msgstr ""
+
+#: .\blog\templates\blog\article\search.html:22
+msgid "There are no results for your query."
+msgstr ""
+
+#: .\blog\templates\blog\article\search.html:24
+msgid "Search again"
+msgstr ""
+
+#: .\blog\templates\blog\article\search.html:26
+msgid "Search for articles"
+msgstr ""
+
+#: .\blog\templates\blog\base.html:17
+msgid "Forum"
+msgstr ""
+
+#: .\blog\templates\blog\base.html:20
+msgid "Hello"
+msgstr ""
+
+#: .\blog\templates\blog\base.html:20
+msgid "Logout"
+msgstr ""
+
+#: .\blog\templates\blog\base.html:22
+msgid "Create Article"
+msgstr ""
+
+#: .\blog\templates\blog\base.html:24
+msgid "Log-in"
+msgstr ""
+
+#: .\blog\templates\blog\base.html:27
+msgid "Communicate and create."
+msgstr ""
+
+#: .\blog\templates\blog\base.html:34
+msgid "Language"
+msgstr ""
+
+#: .\blog\views.py:152
+msgid ""
+"Your article has been successfully "
+"created.                                                 It will be shown in "
+"the list of articles within 15 minutes "
+msgstr ""
+
+#: .\blog\views.py:155
+msgid ""
+"Your article has been created with draft "
+"status.                                                 Only you can see this"
+msgstr ""
+
+#: .\blog\views.py:162 .\blog\views.py:205
+msgid "You must choose at least 1 tag"
+msgstr ""
+
+#: .\blog\views.py:195
+msgid ""
+"Your article has been updated.                                You will see "
+"changes within 15 minutes."
+msgstr ""
+
+#: .\forum\settings.py:120
+msgid "English"
+msgstr "English"
+
+#: .\forum\settings.py:121
+msgid "Russian"
+msgstr "Russian"
+
+#, python-format
+#~ msgid "Page %(page_obj.number)s of %(page_obj.paginator.num_pages)s."
+#~ msgstr "Page %(page_obj.number)s of %(page_obj.paginator.num_pages)s."

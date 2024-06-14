@@ -1,0 +1,68 @@
+{% extends "blog/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Registration" %}{% endblock %}
+
+{% block content %}
+    <h2>{% trans "Registration" %}</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="form-group">
+            {{ form.avatar.label_tag }}
+            {{ form.avatar }}
+            {% if form.avatar.errors %}
+                <div class="error">{{ form.avatar.errors }}</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.username.label_tag }}
+            {{ form.username }}
+            {% if form.username.errors %}
+                <div class="error">{{ form.username.errors }}</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.first_name.label_tag }}
+            {{ form.first_name }}
+            {% if form.first_name.errors %}
+                <div class="error">{{ form.first_name.errors }}</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.last_name.label_tag }}
+            {{ form.last_name }}
+            {% if form.last_name.errors %}
+                <div class="error">{{ form.last_name.errors }}</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+            {% if form.email.errors %}
+                <div class="error">{{ form.email.errors }}</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.about_self.label_tag }}
+            {{ form.about_self }}
+            {% if form.about_self.errors %}
+                <div class="error">{{ form.about_self.errors }}</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.password.label_tag }}
+            {{ form.password }}
+            {% if form.password.errors %}
+                <div class="error">{{ form.password.errors }}</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.password_repeat.label_tag }}
+            {{ form.password_repeat }}
+            {% if form.password_repeat.errors %}
+                <div class="error">{{ form.password_repeat.errors }}</div>
+            {% endif %}
+        </div>
+        <button type="submit">{% trans "Register" %}</button>
+    </form>
+{% endblock %}

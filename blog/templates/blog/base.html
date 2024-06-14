@@ -1,0 +1,60 @@
+{% load blog_tags %}
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link href="{% static "css/blog.css" %}" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div id="base-sidebar">
+    <div id="sidebar">
+      <h2><a href="{% url 'blog:article_list' %}">{% trans "Forum" %}</a></h2>
+      <br>
+      {% if request.user.is_authenticated %}
+        <span class="user">{% trans "Hello" %} <a href="{% url 'account:user_detail' pk=request.user.pk %}">{{ request.user.first_name|default:request.user.username }}</a>, <a href="{% url 'account:logout' %}">{% trans "Logout" %}</a></span>
+        <br>
+        <a href="{% url 'blog:article_create' %}">{% trans "Create Article" %}</a>
+      {% else %}
+        <span class="user"><a href="{% url 'account:login' %}">{% trans "Log-in" %}</a></span>
+      {% endif %}
+      <p>
+        {% trans "Communicate and create." %}
+      </p>
+      <p>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        <div class="languages">
+          <p>{% trans "Language" %}:</p>
+          <ul class="languages">
+            {% for language in languages %}
+              <li>
+                <a href="/{{ language.code }}{{ request.get_full_path|slice:'3:' }}"
+                   {% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}>
+                  {{ language.name_local }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </p>
+    </div>
+  </div>
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li class="{{ message.tags }}">
+          {{ message|safe }}
+          <a href="#" class="close">x</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>

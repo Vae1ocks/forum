@@ -1,0 +1,7 @@
+{% load i18n %}
+<h2>{% trans "Add a new comment" %}</h2>
+<form action="{% url 'blog:article_comment' article.id %}" method="post">
+  {{ form.as_p }}
+  {% csrf_token %}
+  <p><input type="submit" value="{% trans 'Add comment' %}"></p>
+</form>

@@ -1,0 +1,151 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Белый цвет фона */
+    color: #333333; /* Чёрный цвет текста */
+}
+
+/* Основной контент */
+#content {
+    background-color: #ffffff; /* Белый цвет фона основного контента */
+    padding: 20px; /* Поля вокруг основного контента */
+}
+
+/* Блок base.html */
+#base-sidebar {
+    position: absolute; /* Абсолютное позиционирование блока */
+    top: 20px; /* Отступ сверху */
+    right: 20px; /* Отступ справа */
+    width: 200px; /* Ширина блока */
+    padding: 10px; /* Поля вокруг блока */
+    background-color: #f8f9fa; /* Цвет фона блока */
+    border: 1px solid #ccc; /* Граница блока */
+    border-radius: 5px; /* Скругление углов блока */
+    z-index: 999; /* Задать z-index для блока, чтобы он отображался поверх остального контента */
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    color: #000000; /* Чёрный цвет текста для заголовков */
+}
+
+/* Ссылки */
+a {
+    color: #007bff; /* Цвет ссылок */
+    text-decoration: none; /* Удаление подчёркивания */
+}
+
+a:hover {
+    text-decoration: underline; /* Добавление подчёркивания при наведении */
+}
+
+/* Формы */
+form {
+    margin-bottom: 20px; /* Отступ снизу форм */
+}
+
+label {
+    display: block; /* Каждый label на новой строке */
+    margin-bottom: 5px; /* Отступ снизу у label */
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%; /* Расширение текстовых полей на всю ширину */
+    padding: 10px; /* Отступы в текстовых полях */
+    border: 1px solid #cccccc; /* Параметры границ текстовых полей */
+    border-radius: 5px; /* Скругление углов текстовых полей */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Цвет фона кнопок Submit */
+    color: #ffffff; /* Белый цвет текста на кнопках */
+    border: none; /* Удаление границ кнопок */
+    padding: 10px 20px; /* Отступы в кнопках */
+    border-radius: 5px; /* Скругление углов кнопок */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Изменение цвета фона кнопок Submit при наведении */
+}
+
+/* Сайдбар */
+#sidebar {
+    background-color: #f8f9fa; /* Светло-серый цвет фона сайдбара */
+    padding: 20px; /* Поля вокруг сайдбара */
+}
+
+/* Стили для сообщений и комментариев */
+.message {
+    margin-bottom: 20px; /* Отступ снизу сообщений */
+    padding: 20px; /* Поля вокруг сообщений */
+    background-color: #f8f9fa; /* Светло-серый цвет фона сообщений */
+    border-radius: 5px; /* Скругление углов сообщений */
+}
+
+ul.messages {
+    position: fixed;
+    top: 10px; /* Изменено для перемещения сообщений выше */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 80%; /* Ширина списка сообщений */
+    max-width: 600px; /* Максимальная ширина списка сообщений */
+    z-index: 1000; /* Поверх всех элементов */
+}
+
+ul.messages li {
+    position: relative;
+    margin: 10px 0;
+    padding: 14px 20px;
+    list-style: none;
+    color: #fff;
+    border-radius: 5px; /* Скругление углов сообщений */
+    text-align: center; /* Центрирование текста */
+    transition: opacity 0.3s ease, max-height 0.3s ease; /* Добавлена плавность скрытия */
+    opacity: 1;
+    max-height: 100px; /* Максимальная высота для анимации скрытия */
+    overflow: hidden;
+}
+
+ul.messages li.success { background: #81ce81; }
+ul.messages li.success a { color: #0ac33e; }
+
+ul.messages li.error { background: #a30029; color: #e9828e; }
+ul.messages li.error a { color: #e9828e; }
+
+ul.messages li.info { background: #faffae; color: #696b4e; }
+ul.messages li.info a { color: #1586de; }
+
+ul.messages li.warning { background: #de9404; }
+ul.messages li.warning a { color: #f49000; }
+
+ul.messages li a.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.7;
+    text-decoration: none; /* Убирает подчёркивание */
+}
+
+ul.messages li a.close:hover {
+    opacity: 1;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 200px;  /* или любой другой желаемый размер */
+    height: 200px; /* поддерживайте тот же размер, чтобы сделать его круглым */
+    object-fit: cover; /* это позволит изображению заполнить элемент без искажений */
+}

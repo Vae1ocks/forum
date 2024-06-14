@@ -1,0 +1,63 @@
+{% extends "blog/base.html" %}
+{% load i18n %}
+{% load thumbnail %}
+
+{% block title %}{% trans "User Profile:" %} {{ user.username }}{% endblock %}
+
+{% block content %}
+  <div class="user-profile">
+    <h1>{% trans "User Profile:" %} {{ user.username }}</h1>
+    {% if user.avatar %}
+        <p>{% thumbnail user.avatar "200x200" crop="center" as im %}<img src="{{ im.url }}" class="img-circle" alt="{{ user.username }}"></p>
+    {% else %}
+        <p>{% thumbnail "users/default.png" "200x200" crop="center" as im %}<img src="{{ im.url }}" class="img-circle" alt="Default avatar"></p>
+    {% endif %}
+
+    <p>{% trans "About me:" %} {{ user.about_self }}</p>
+    {% if user.get_full_name %}
+      <p>{% trans "Full Name:" %} {{ user.get_full_name }}</p>
+    {% else %}
+      <p>{% trans "Full Name:" %} {% trans "NULL" %}</p>
+    {% endif %}
+    <p>{% trans "Email:" %} {{ user.email }}</p>
+    <p>{% trans "Created:" %} {{ user.date_joined }}</p>
+    
+    {% if user == request.user %}
+      <p>{% trans "Wanna change your password?" %} <a href="{% url 'account:password_change' %}">{% trans "Click here" %}</a></p>
+      <p><a href="{% url 'account:edit' pk=user.pk %}">{% trans "You can edit your profile here" %}</a></p>
+      <p><a href="{% url 'account:old_email_confirmation' %}">{% trans "You can edit your email here" %}</a></p>
+      <p><a href="{% url 'account:create_authentication_token' %}">{% trans "You can get secret code for login instead of password and username" %}</a></p>
+    {% endif %}
+    
+    <h2>{% trans "Articles by" %} {{ user.username }}</h2>
+    <ul>
+      {% for article in articles %}
+        <li>
+          <a href="{{ article.get_absolute_url }}">{{ article.title }}</a>
+          {% if article.author == user %}
+            {% if user == request.user %}
+              &nbsp;&nbsp;&nbsp;<a href="{% url 'blog:article_edit' pk=article.pk %}">{% trans "Edit" %}</a>
+            {% endif %}
+          {% endif %}
+        </li>
+      {% empty %}
+        <li>{% trans "No articles found." %}</li>
+      {% endfor %}
+    </ul>
+    
+    <h2>{% trans "Comments by" %} {{ user.username }}</h2>
+    <ul>
+      {% for comment in comments %}
+        <li class="comment">
+          <div>{{ comment.body }}</div>
+          <div class="comment-info">
+            <em>{% trans "For article:" %}</em> 
+            <a href="{{ comment.article.get_absolute_url }}">{{ comment.article.title }}</a>
+          </div>
+        </li>
+      {% empty %}
+        <li>{% trans "No comments found." %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

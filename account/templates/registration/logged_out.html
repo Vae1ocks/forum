@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div>
+    <h1 style="font-size: 24px;">{% trans "You have been logged out" %}</h1>
+    <p>{% trans "You can" %} <a href="{% url 'account:login' %}">{% trans "login" %}</a></p>
+    <p>{% trans "You can" %} <a href="{% url 'blog:article_list' %}">{% trans "visit the site without authorization." %}</a></p>
+</div>
+{% endblock %}

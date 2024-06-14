@@ -1,0 +1,8 @@
+{% extends 'blog/base.html' %}
+{% load i18n %}
+{% block content %}
+<div>
+    <h1>{% trans "Your account has been created" %}</h1>
+    <p>{% trans "Type to" %} <a href="{% url 'account:login' %}">{% trans "login" %}</a></p>
+</div>
+{% endblock %}
