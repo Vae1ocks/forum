@@ -117,8 +117,7 @@ class ArticleSearchView(FormView):
         results = cache.get(query)
         if not results:
             if query:
-                results = Article.published.annotate(similarity=TrigramSimilarity('title', query),
-                                                    ).filter(similarity__gt=0.1).order_by('-similarity')
+                results = Article.published.filter(title__icontains=query)
             else:
                 results = []
             cache.set(query, results)

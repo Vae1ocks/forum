@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'blog.apps.BlogConfig',
-    'django.contrib.postgres',
+    # 'django.contrib.postgres',
     'taggit',
     'django.contrib.sites',
     'django.contrib.sitemaps',
@@ -79,10 +79,8 @@ WSGI_APPLICATION = 'forum.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'forum',
-        'USER': 'admin',
-        'PASSWORD': 'admin',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
